@@ -1,0 +1,190 @@
+
+---
+> show dbs
+admin       0.000GB
+assingment  0.000GB
+config      0.000GB
+local       0.000GB
+> db
+test
+> use assingment
+switched to db assingment
+> db
+assingment
+> db.createCollection("users")
+{ "ok" : 1 }
+> show collections
+mongo intro
+users
+> db.users.insert({"first_name":"Sagar"})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"last_name":"Gulia"})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"email":"sgulia729@gmail.com"})
+WriteResult({ "nInserted" : 1 })
+> db.users.inser({"gender":"male"})
+uncaught exception: TypeError: db.users.inser is not a function :
+@(shell):1:1
+> db.users.insert({"gender":"male"})
+WriteResult({ "nInserted" : 1 })
+> db.users.insert({"ip_address":"0982445873"})
+WriteResult({ "nInserted" : 1 })
+> db.user.insert({"age":19})
+WriteResult({ "nInserted" : 1 })
+> db.users.find({}).pretty()
+{ "_id" : ObjectId("623ec7011e532e721fee1f4a"), "first_name" : "Sagar" }
+{ "_id" : ObjectId("623ec72f1e532e721fee1f4b"), "last_name" : "Gulia" }
+{
+        "_id" : ObjectId("623ec7b51e532e721fee1f4c"),
+        "email" : "sgulia729@gmail.com"
+}
+{ "_id" : ObjectId("623ec8001e532e721fee1f4d"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8101e532e721fee1f4e"), "ip_address" : "0982445873" }
+> db.users.insertMany([{"frst_name":"Adi"},{"last_name":"raj"},{"email":"adi.1001@gmail.com"},{"gender":"male"},{"ip_address":"097821370"},{"age":22}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("623ec8a61e532e721fee1f50"),
+                ObjectId("623ec8a61e532e721fee1f51"),
+                ObjectId("623ec8a61e532e721fee1f52"),
+                ObjectId("623ec8a61e532e721fee1f53"),
+                ObjectId("623ec8a61e532e721fee1f54"),
+                ObjectId("623ec8a61e532e721fee1f55")
+        ]
+}
+> db.users.insertMany([{"first_name":"raji"},{"last_name":"kumar"},{"email":"raji@gmail.com"},{"gender":"male"},{"ip_address":09822283},{"age"48}])
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:140
+> db.users.insertMany([{"frst_name":"raji"},{"last_name":"raji"},{"email":"raji.1001@gmail.com"},{"gender":"male"},{"ip_address":"337821370"},{"age":21}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("623ec9501e532e721fee1f56"),
+                ObjectId("623ec9501e532e721fee1f57"),
+                ObjectId("623ec9501e532e721fee1f58"),
+                ObjectId("623ec9501e532e721fee1f59"),
+                ObjectId("623ec9501e532e721fee1f5a"),
+                ObjectId("623ec9501e532e721fee1f5b")
+        ]
+}
+> show dbs
+admin       0.000GB
+assingment  0.000GB
+config      0.000GB
+local       0.000GB
+> db
+assingment
+> show collections
+mongo intro
+user
+users
+> db.users.find({}).pretty()
+{ "_id" : ObjectId("623ec7011e532e721fee1f4a"), "first_name" : "Sagar" }
+{ "_id" : ObjectId("623ec72f1e532e721fee1f4b"), "last_name" : "Gulia" }
+{
+        "_id" : ObjectId("623ec7b51e532e721fee1f4c"),
+        "email" : "sgulia729@gmail.com"
+}
+{ "_id" : ObjectId("623ec8001e532e721fee1f4d"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8101e532e721fee1f4e"), "ip_address" : "0982445873" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f50"), "frst_name" : "Adi" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f51"), "last_name" : "raj" }
+{
+        "_id" : ObjectId("623ec8a61e532e721fee1f52"),
+        "email" : "adi.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec8a61e532e721fee1f53"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f54"), "ip_address" : "097821370" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f55"), "age" : 22 }
+{ "_id" : ObjectId("623ec9501e532e721fee1f56"), "frst_name" : "raji" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f57"), "last_name" : "raji" }
+{
+        "_id" : ObjectId("623ec9501e532e721fee1f58"),
+        "email" : "raji.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec9501e532e721fee1f59"), "gender" : "male" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5a"), "ip_address" : "337821370" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5b"), "age" : 21 }
+>
+>
+> db.users.findOne({"first_name":"raji"})
+null
+> db.users.findOne({"frst_name":"raji"})
+{ "_id" : ObjectId("623ec9501e532e721fee1f56"), "frst_name" : "raji" }
+> db.users.remove({frst_name":"raji"})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:26
+> db.users.remove({"frst_name":"raji"})
+WriteResult({ "nRemoved" : 1 })
+> db.users.find({}).pretty()
+{ "_id" : ObjectId("623ec7011e532e721fee1f4a"), "first_name" : "Sagar" }
+{ "_id" : ObjectId("623ec72f1e532e721fee1f4b"), "last_name" : "Gulia" }
+{
+        "_id" : ObjectId("623ec7b51e532e721fee1f4c"),
+        "email" : "sgulia729@gmail.com"
+}
+{ "_id" : ObjectId("623ec8001e532e721fee1f4d"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8101e532e721fee1f4e"), "ip_address" : "0982445873" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f50"), "frst_name" : "Adi" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f51"), "last_name" : "raj" }
+{
+        "_id" : ObjectId("623ec8a61e532e721fee1f52"),
+        "email" : "adi.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec8a61e532e721fee1f53"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f54"), "ip_address" : "097821370" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f55"), "age" : 22 }
+{ "_id" : ObjectId("623ec9501e532e721fee1f57"), "last_name" : "raji" }
+{
+        "_id" : ObjectId("623ec9501e532e721fee1f58"),
+        "email" : "raji.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec9501e532e721fee1f59"), "gender" : "male" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5a"), "ip_address" : "337821370" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5b"), "age" : 21 }
+>
+>
+> db.users.update({"first_name":"Sagar"},{$set:{"country":"India"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("623ec7011e532e721fee1f4a"),
+        "first_name" : "Sagar",
+        "country" : "India"
+}
+{ "_id" : ObjectId("623ec72f1e532e721fee1f4b"), "last_name" : "Gulia" }
+{
+        "_id" : ObjectId("623ec7b51e532e721fee1f4c"),
+        "email" : "sgulia729@gmail.com"
+}
+{ "_id" : ObjectId("623ec8001e532e721fee1f4d"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8101e532e721fee1f4e"), "ip_address" : "0982445873" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f50"), "frst_name" : "Adi" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f51"), "last_name" : "raj" }
+{
+        "_id" : ObjectId("623ec8a61e532e721fee1f52"),
+        "email" : "adi.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec8a61e532e721fee1f53"), "gender" : "male" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f54"), "ip_address" : "097821370" }
+{ "_id" : ObjectId("623ec8a61e532e721fee1f55"), "age" : 22 }
+{ "_id" : ObjectId("623ec9501e532e721fee1f57"), "last_name" : "raji" }
+{
+        "_id" : ObjectId("623ec9501e532e721fee1f58"),
+        "email" : "raji.1001@gmail.com"
+}
+{ "_id" : ObjectId("623ec9501e532e721fee1f59"), "gender" : "male" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5a"), "ip_address" : "337821370" }
+{ "_id" : ObjectId("623ec9501e532e721fee1f5b"), "age" : 21 }
+>
+>
+> db.users.remove({})
+WriteResult({ "nRemoved" : 16 })
+> db.dropDatabase()
+{ "ok" : 1 }
+> db
+assingment
+> show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
