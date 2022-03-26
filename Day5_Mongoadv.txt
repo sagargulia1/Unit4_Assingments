@@ -1,0 +1,1656 @@
+> show dbs
+Assigment  0.000GB
+admin      0.000GB
+config     0.000GB
+local      0.000GB
+test       0.000GB
+> use movies
+switched to db movies
+> show dbs
+Assigment  0.000GB
+admin      0.000GB
+config     0.000GB
+local      0.000GB
+test       0.000GB
+> db.uses.insert({"batch":"movie"})
+WriteResult({ "nInserted" : 1 })
+> use movies
+switched to db movies
+> db.movie.find({}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfb"),
+        "id" : 6,
+        "movie_name" : "Killing Me Softly",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : "$18837.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfc"),
+        "id" : 7,
+        "movie_name" : "Die Fighting",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 1995,
+        "budget" : "$18723.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d01"),
+        "id" : 12,
+        "movie_name" : "Invitation to the Dance",
+        "movie_genre" : "Animation|Fantasy|Musical",
+        "production_year" : 1969,
+        "budget" : "$19743.02"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d05"),
+        "id" : 16,
+        "movie_name" : "Red Hill",
+        "movie_genre" : "Crime|Thriller|Western",
+        "production_year" : 1990,
+        "budget" : "$15925.17"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d07"),
+        "id" : 18,
+        "movie_name" : "Fairly Odd Movie: Grow Up, Timmy Turner!, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 1989,
+        "budget" : "$18943.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d08"),
+        "id" : 19,
+        "movie_name" : "Silence, The (Tystnaden)",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$9886.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+Type "it" for more
+> db.movie.find({movie_name:{$eq:"Michael Jackson: Life of a Superstar"}}).pretdb.movie.find({movie_name:{$eq:"Michael Jackson: Life of a Superstar"}}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+> db.movie.find({budget:{$not:{$eq:"Michael Jackson: Life of a Superstar"}}}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfb"),
+        "id" : 6,
+        "movie_name" : "Killing Me Softly",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : "$18837.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfc"),
+        "id" : 7,
+        "movie_name" : "Die Fighting",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 1995,
+        "budget" : "$18723.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d01"),
+        "id" : 12,
+        "movie_name" : "Invitation to the Dance",
+        "movie_genre" : "Animation|Fantasy|Musical",
+        "production_year" : 1969,
+        "budget" : "$19743.02"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d05"),
+        "id" : 16,
+        "movie_name" : "Red Hill",
+        "movie_genre" : "Crime|Thriller|Western",
+        "production_year" : 1990,
+        "budget" : "$15925.17"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d07"),
+        "id" : 18,
+        "movie_name" : "Fairly Odd Movie: Grow Up, Timmy Turner!, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 1989,
+        "budget" : "$18943.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d08"),
+        "id" : 19,
+        "movie_name" : "Silence, The (Tystnaden)",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$9886.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+Type "it" for more
+> db.movie.find({budget:{$gte:"$16195.29"}}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfb"),
+        "id" : 6,
+        "movie_name" : "Killing Me Softly",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : "$18837.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfc"),
+        "id" : 7,
+        "movie_name" : "Die Fighting",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 1995,
+        "budget" : "$18723.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d01"),
+        "id" : 12,
+        "movie_name" : "Invitation to the Dance",
+        "movie_genre" : "Animation|Fantasy|Musical",
+        "production_year" : 1969,
+        "budget" : "$19743.02"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d07"),
+        "id" : 18,
+        "movie_name" : "Fairly Odd Movie: Grow Up, Timmy Turner!, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 1989,
+        "budget" : "$18943.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d08"),
+        "id" : 19,
+        "movie_name" : "Silence, The (Tystnaden)",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$9886.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0c"),
+        "id" : 23,
+        "movie_name" : "Something to Talk About",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2006,
+        "budget" : "$16571.89"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0f"),
+        "id" : 26,
+        "movie_name" : "Dorm Daze (National Lampoon Presents Dorm Daze)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2007,
+        "budget" : "$9094.51"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d15"),
+        "id" : 32,
+        "movie_name" : "House at the End of the Street",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2008,
+        "budget" : "$9944.57"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d16"),
+        "id" : 33,
+        "movie_name" : "French Twist (Gazon maudit)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2006,
+        "budget" : "$19615.59"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1a"),
+        "id" : 37,
+        "movie_name" : "Ce que mes yeux ont vu",
+        "movie_genre" : "Drama|Mystery|Thriller",
+        "production_year" : 1995,
+        "budget" : "$19779.11"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1d"),
+        "id" : 40,
+        "movie_name" : "Raven, The",
+        "movie_genre" : "Horror",
+        "production_year" : 2011,
+        "budget" : "$19397.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d22"),
+        "id" : 45,
+        "movie_name" : "Going to Kansas City",
+        "movie_genre" : "Drama|Romance|Thriller",
+        "production_year" : 2013,
+        "budget" : "$17075.50"
+}
+Type "it" for more
+> db.movie.find({budget:{$lte:"$17075.50"}}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d05"),
+        "id" : 16,
+        "movie_name" : "Red Hill",
+        "movie_genre" : "Crime|Thriller|Western",
+        "production_year" : 1990,
+        "budget" : "$15925.17"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0a"),
+        "id" : 21,
+        "movie_name" : "Sweet Sweetback's Baadasssss Song",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : "$15943.30"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0b"),
+        "id" : 22,
+        "movie_name" : "Wizard of Oz, The",
+        "movie_genre" : "Adventure|Children|Comedy|Fantasy",
+        "production_year" : 2011,
+        "budget" : "$15510.75"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0c"),
+        "id" : 23,
+        "movie_name" : "Something to Talk About",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2006,
+        "budget" : "$16571.89"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0d"),
+        "id" : 24,
+        "movie_name" : "Rebecca of Sunnybrook Farm",
+        "movie_genre" : "Children|Comedy|Drama|Musical",
+        "production_year" : 1980,
+        "budget" : "$11923.96"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0e"),
+        "id" : 25,
+        "movie_name" : "Thor: Tales of Asgard",
+        "movie_genre" : "Animation",
+        "production_year" : 1989,
+        "budget" : "$13596.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d10"),
+        "id" : 27,
+        "movie_name" : "North Star, The",
+        "movie_genre" : "Drama|Musical|Romance|War",
+        "production_year" : 1990,
+        "budget" : "$11417.82"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d11"),
+        "id" : 28,
+        "movie_name" : "My Boy",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2012,
+        "budget" : "$12552.61"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d12"),
+        "id" : 29,
+        "movie_name" : "Power 98",
+        "movie_genre" : "Action|Mystery|Thriller",
+        "production_year" : 2008,
+        "budget" : "$10792.34"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d13"),
+        "id" : 30,
+        "movie_name" : "Cat's Eye",
+        "movie_genre" : "Horror",
+        "production_year" : 2001,
+        "budget" : "$16147.20"
+}
+Type "it" for more
+> db.movie.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$10000}}]}).pretty()
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):1:84
+> db.movie.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0b"),
+        "id" : 22,
+        "movie_name" : "Wizard of Oz, The",
+        "movie_genre" : "Adventure|Children|Comedy|Fantasy",
+        "production_year" : 2011,
+        "budget" : "$15510.75"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0c"),
+        "id" : 23,
+        "movie_name" : "Something to Talk About",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2006,
+        "budget" : "$16571.89"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0f"),
+        "id" : 26,
+        "movie_name" : "Dorm Daze (National Lampoon Presents Dorm Daze)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2007,
+        "budget" : "$9094.51"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d11"),
+        "id" : 28,
+        "movie_name" : "My Boy",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2012,
+        "budget" : "$12552.61"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d12"),
+        "id" : 29,
+        "movie_name" : "Power 98",
+        "movie_genre" : "Action|Mystery|Thriller",
+        "production_year" : 2008,
+        "budget" : "$10792.34"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d13"),
+        "id" : 30,
+        "movie_name" : "Cat's Eye",
+        "movie_genre" : "Horror",
+        "production_year" : 2001,
+        "budget" : "$16147.20"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d15"),
+        "id" : 32,
+        "movie_name" : "House at the End of the Street",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2008,
+        "budget" : "$9944.57"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d16"),
+        "id" : 33,
+        "movie_name" : "French Twist (Gazon maudit)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2006,
+        "budget" : "$19615.59"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d17"),
+        "id" : 34,
+        "movie_name" : "Lost Horizon",
+        "movie_genre" : "Adventure|Drama|Fantasy|Musical|Romance",
+        "production_year" : 2009,
+        "budget" : "$13914.42"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1d"),
+        "id" : 40,
+        "movie_name" : "Raven, The",
+        "movie_genre" : "Horror",
+        "production_year" : 2011,
+        "budget" : "$19397.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1e"),
+        "id" : 41,
+        "movie_name" : "Housesitter",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$13085.96"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d20"),
+        "id" : 43,
+        "movie_name" : "Extra Man, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : "$10902.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d21"),
+        "id" : 44,
+        "movie_name" : "Good Old Fashioned Orgy, A",
+        "movie_genre" : "Comedy",
+        "production_year" : 2003,
+        "budget" : "$10250.07"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d22"),
+        "id" : 45,
+        "movie_name" : "Going to Kansas City",
+        "movie_genre" : "Drama|Romance|Thriller",
+        "production_year" : 2013,
+        "budget" : "$17075.50"
+}
+Type "it" for more
+> db.movie.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:"$10000}}]}).pretty()
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):1:83
+> db.movie.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfb"),
+        "id" : 6,
+        "movie_name" : "Killing Me Softly",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : "$18837.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfc"),
+        "id" : 7,
+        "movie_name" : "Die Fighting",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 1995,
+        "budget" : "$18723.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d01"),
+        "id" : 12,
+        "movie_name" : "Invitation to the Dance",
+        "movie_genre" : "Animation|Fantasy|Musical",
+        "production_year" : 1969,
+        "budget" : "$19743.02"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d05"),
+        "id" : 16,
+        "movie_name" : "Red Hill",
+        "movie_genre" : "Crime|Thriller|Western",
+        "production_year" : 1990,
+        "budget" : "$15925.17"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d07"),
+        "id" : 18,
+        "movie_name" : "Fairly Odd Movie: Grow Up, Timmy Turner!, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 1989,
+        "budget" : "$18943.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d08"),
+        "id" : 19,
+        "movie_name" : "Silence, The (Tystnaden)",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$9886.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+Type "it" for more
+ db.movie.find({$nor:[{production_year:{$gt:2000}},{budget:{$gt:"$15000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0d"),
+        "id" : 24,
+        "movie_name" : "Rebecca of Sunnybrook Farm",
+        "movie_genre" : "Children|Comedy|Drama|Musical",
+        "production_year" : 1980,
+        "budget" : "$11923.96"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0e"),
+        "id" : 25,
+        "movie_name" : "Thor: Tales of Asgard",
+        "movie_genre" : "Animation",
+        "production_year" : 1989,
+        "budget" : "$13596.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d10"),
+        "id" : 27,
+        "movie_name" : "North Star, The",
+        "movie_genre" : "Drama|Musical|Romance|War",
+        "production_year" : 1990,
+        "budget" : "$11417.82"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d14"),
+        "id" : 31,
+        "movie_name" : "Africa: Texas Style",
+        "movie_genre" : "Adventure|Western",
+        "production_year" : 1995,
+        "budget" : "$13518.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d18"),
+        "id" : 35,
+        "movie_name" : "Mutantes",
+        "movie_genre" : "Documentary",
+        "production_year" : 1993,
+        "budget" : "$10626.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d19"),
+        "id" : 36,
+        "movie_name" : "Marvin's Room",
+        "movie_genre" : "Drama",
+        "production_year" : 1956,
+        "budget" : "$14895.16"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1b"),
+        "id" : 38,
+        "movie_name" : "Lost Boys: The Tribe",
+        "movie_genre" : "Comedy|Horror|Thriller",
+        "production_year" : 1981,
+        "budget" : "$11070.99"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1f"),
+        "id" : 42,
+        "movie_name" : "Whatever Lola Wants",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$14570.84"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d24"),
+        "id" : 47,
+        "movie_name" : "Scum",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1992,
+        "budget" : "$13436.64"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d28"),
+        "id" : 51,
+        "movie_name" : "Heavy Metal Parking Lot",
+        "movie_genre" : "Documentary|Musical",
+        "production_year" : 2000,
+        "budget" : "$10526.96"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d2a"),
+        "id" : 53,
+        "movie_name" : "The Burglar",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1998,
+        "budget" : "$11545.95"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d2c"),
+        "id" : 55,
+        "movie_name" : "Mutantes",
+        "movie_genre" : "Documentary",
+        "production_year" : 1987,
+        "budget" : "$12697.71"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d2d"),
+        "id" : 56,
+        "movie_name" : "Green Card",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 1997,
+        "budget" : "$11407.92"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d41"),
+        "id" : 76,
+        "movie_name" : "As I Lay Dying",
+        "movie_genre" : "Drama",
+        "production_year" : 1996,
+        "budget" : "$13199.04"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d42"),
+        "id" : 77,
+        "movie_name" : "Nobody's Baby",
+        "movie_genre" : "Comedy",
+        "production_year" : 1998,
+        "budget" : "$14599.50"
+}
+Type "it" for more
+
+> db.movie.find({$or:[{production_year:{$ne:2000}},{budget:{$lt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf7"),
+        "id" : 2,
+        "movie_name" : "On the Waterfront",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : "$11373.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf8"),
+        "id" : 3,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 1995,
+        "budget" : "$13099.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf9"),
+        "id" : 4,
+        "movie_name" : "Rude",
+        "movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$17719.58"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfa"),
+        "id" : 5,
+        "movie_name" : "Sachs' Disease (La maladie de Sachs)",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : "$16803.53"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfb"),
+        "id" : 6,
+        "movie_name" : "Killing Me Softly",
+        "movie_genre" : "Drama|Mystery|Romance|Thriller",
+        "production_year" : 1993,
+        "budget" : "$18837.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfc"),
+        "id" : 7,
+        "movie_name" : "Die Fighting",
+        "movie_genre" : "Action|Thriller",
+        "production_year" : 1995,
+        "budget" : "$18723.49"
+}
+{
+        "_id" : ObjectId("6228b37b5442451e89767772"),
+        "id" : "202",
+        "movie_name" : "Three Ages",
+        "production_year" : 1992,
+        "budget" : "$10156.78",
+        "movie_genre" : "Comedy"
+}
+{
+        "_id" : ObjectId("6228b37b5442451e89767776"),
+        "id" : "81",
+        "movie_name" : "Samson & Sally",
+        "production_year" : 1991,
+        "budget" : "$11129.47",
+        "movie_genre" : "Animation|Children|Romance"
+}
+{
+        "_id" : ObjectId("6228b37b5442451e89767779"),
+        "id" : "71187",
+        "movie_name" : "Adventures of Kitty O'Day (Kitty O'Day Comes Through)",
+        "production_year" : 1990,
+        "budget" : "$13952.68",
+        "movie_genre" : "Comedy|Crime|Mystery|Romance"
+}
+{
+        "_id" : ObjectId("6228b37b5442451e8976777e"),
+        "id" : "27",
+        "movie_name" : "Taxi 2",
+        "production_year" : 2004,
+        "budget" : "$10658.38",
+        "movie_genre" : "Action|Comedy"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d00"),
+        "id" : 11,
+        "movie_name" : "In the Name of the King: A Dungeon Siege Tale",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "production_year" : 1998,
+        "budget" : "$14287.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d01"),
+        "id" : 12,
+        "movie_name" : "Invitation to the Dance",
+        "movie_genre" : "Animation|Fantasy|Musical",
+        "production_year" : 1969,
+        "budget" : "$19743.02"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d03"),
+        "id" : 14,
+        "movie_name" : "Competition, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1987,
+        "budget" : "$12914.31"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d04"),
+        "id" : 15,
+        "movie_name" : "Solomon Kane",
+        "movie_genre" : "Action|Adventure|Fantasy|Horror",
+        "production_year" : 1997,
+        "budget" : "$16703.37"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d05"),
+        "id" : 16,
+        "movie_name" : "Red Hill",
+        "movie_genre" : "Crime|Thriller|Western",
+        "production_year" : 1990,
+        "budget" : "$15925.17"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d07"),
+        "id" : 18,
+        "movie_name" : "Fairly Odd Movie: Grow Up, Timmy Turner!, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 1989,
+        "budget" : "$18943.49"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d08"),
+        "id" : 19,
+        "movie_name" : "Silence, The (Tystnaden)",
+        "movie_genre" : "Drama",
+        "production_year" : 1991,
+        "budget" : "$9886.23"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d09"),
+        "id" : 20,
+        "movie_name" : "Michael Jackson: Life of a Superstar",
+        "movie_genre" : "Documentary",
+        "production_year" : 1998,
+        "budget" : "$9830.24"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0a"),
+        "id" : 21,
+        "movie_name" : "Sweet Sweetback's Baadasssss Song",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 1994,
+        "budget" : "$15943.30"
+}
+Type "it" for more
+
+> db.movie.find({production_year:{$in:[2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010]}}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cf6"),
+        "id" : 1,
+        "movie_name" : "Abominable Dr. Phibes, The",
+        "movie_genre" : "Horror|Mystery",
+        "production_year" : 2007,
+        "budget" : "$16467.40"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfd"),
+        "id" : 8,
+        "movie_name" : "Price Above Rubies, A",
+        "movie_genre" : "Drama",
+        "production_year" : 2008,
+        "budget" : "$15090.15"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cfe"),
+        "id" : 9,
+        "movie_name" : "Wait Until Dark",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2007,
+        "budget" : "$18228.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047cff"),
+        "id" : 10,
+        "movie_name" : "The Cop in Blue Jeans",
+        "movie_genre" : "Action|Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$10198.03"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d06"),
+        "id" : 17,
+        "movie_name" : "Thirty Day Princess",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$16195.29"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0c"),
+        "id" : 23,
+        "movie_name" : "Something to Talk About",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2006,
+        "budget" : "$16571.89"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d0f"),
+        "id" : 26,
+        "movie_name" : "Dorm Daze (National Lampoon Presents Dorm Daze)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2007,
+        "budget" : "$9094.51"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d12"),
+        "id" : 29,
+        "movie_name" : "Power 98",
+        "movie_genre" : "Action|Mystery|Thriller",
+        "production_year" : 2008,
+        "budget" : "$10792.34"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d13"),
+        "id" : 30,
+        "movie_name" : "Cat's Eye",
+        "movie_genre" : "Horror",
+        "production_year" : 2001,
+        "budget" : "$16147.20"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d15"),
+        "id" : 32,
+        "movie_name" : "House at the End of the Street",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2008,
+        "budget" : "$9944.57"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d16"),
+        "id" : 33,
+        "movie_name" : "French Twist (Gazon maudit)",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2006,
+        "budget" : "$19615.59"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d17"),
+        "id" : 34,
+        "movie_name" : "Lost Horizon",
+        "movie_genre" : "Adventure|Drama|Fantasy|Musical|Romance",
+        "production_year" : 2009,
+        "budget" : "$13914.42"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d1e"),
+        "id" : 41,
+        "movie_name" : "Housesitter",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2007,
+        "budget" : "$13085.96"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d20"),
+        "id" : 43,
+        "movie_name" : "Extra Man, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : "$10902.94"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d21"),
+        "id" : 44,
+        "movie_name" : "Good Old Fashioned Orgy, A",
+        "movie_genre" : "Comedy",
+        "production_year" : 2003,
+        "budget" : "$10250.07"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d27"),
+        "id" : 50,
+        "movie_name" : "World Is Not Enough, The",
+        "movie_genre" : "Action|Adventure|Thriller",
+        "production_year" : 2006,
+        "budget" : "$15568.65"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d28"),
+        "id" : 51,
+        "movie_name" : "Heavy Metal Parking Lot",
+        "movie_genre" : "Documentary|Musical",
+        "production_year" : 2000,
+        "budget" : "$10526.96"
+}
+
+Type "it" for more
+
+> db.movie.find({}).sort({production_year:-1,movie_name:-1}).pretty()
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d6f"),
+        "id" : 122,
+        "movie_name" : "One Chance",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2013,
+        "budget" : "$16992.10"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d02"),
+        "id" : 13,
+        "movie_name" : "I Even Met Happy Gypsies (Skupljaci perja)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$18248.06"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d22"),
+        "id" : 45,
+        "movie_name" : "Going to Kansas City",
+        "movie_genre" : "Drama|Romance|Thriller",
+        "production_year" : 2013,
+        "budget" : "$17075.50"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047dda"),
+        "id" : 229,
+        "movie_name" : "Character (Karakter)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$19305.19"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d3f"),
+        "id" : 74,
+        "movie_name" : "Blow-Out (La grande bouffe)",
+        "movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$13339.08"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d90"),
+        "id" : 155,
+        "movie_name" : "Assisted Living",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2013,
+        "budget" : "$9185.91"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047e9d"),
+        "id" : 424,
+        "movie_name" : "51 Birch Street",
+        "movie_genre" : "Documentary",
+        "production_year" : 2013,
+        "budget" : "$19695.44"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d49"),
+        "id" : 84,
+        "movie_name" : "Zarafa",
+        "movie_genre" : "Animation",
+        "production_year" : 2012,
+        "budget" : "$9292.86"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047e5b"),
+        "id" : 358,
+        "movie_name" : "Where the Boys Are",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : "$18832.59"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d2f"),
+        "id" : 58,
+        "movie_name" : "Uprising",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$14224.68"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d2e"),
+        "id" : 57,
+        "movie_name" : "Telling You",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : "$16173.42"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047e5e"),
+        "id" : 361,
+        "movie_name" : "Space Battleship Yamato",
+        "movie_genre" : "Action|Adventure|Drama",
+        "production_year" : 2012,
+        "budget" : "$17943.05"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047e7c"),
+        "id" : 391,
+        "movie_name" : "Snipes",
+        "movie_genre" : "Drama|Thriller",
+        "production_year" : 2012,
+        "budget" : "$16190.60"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047dd2"),
+        "id" : 221,
+        "movie_name" : "Secret Society",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : "$10761.97"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047ebf"),
+        "id" : 458,
+        "movie_name" : "School Ties",
+        "movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$9084.50"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d30"),
+        "id" : 59,
+        "movie_name" : "Santa with Muscles",
+        "movie_genre" : "Comedy",
+        "production_year" : 2012,
+        "budget" : "$11235.59"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047d11"),
+        "id" : 28,
+        "movie_name" : "My Boy",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2012,
+        "budget" : "$12552.61"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047df5"),
+        "id" : 256,
+        "movie_name" : "Line King: The Al Hirschfeld Story, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2012,
+        "budget" : "$11758.19"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047ddb"),
+        "id" : 230,
+        "movie_name" : "Knight's Tale, A",
+        "movie_genre" : "Action|Comedy|Romance",
+        "production_year" : 2012,
+        "budget" : "$10445.30"
+}
+{
+        "_id" : ObjectId("6228d7d42511455ed6047ea3"),
+        "id" : 430,
+        "movie_name" : "King of Escape, The (Le roi de l'évasion)",
+        "movie_genre" : "Adventure|Comedy",
+        "production_year" : 2012,
+        "budget" : "$14149.28"
+}
